@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "Farid_CZ",
+    "motivations": "Cardano is a constantly evolving system that needs to be constantly learned and I want to pass on this experience to the Czech audience.  ",
+    "objectives": "I believe in decentralisation, the right to privacy, blockchain and the better world it could offer us. I want to be a support, a mentor for Czech ADA owners.",
+    "paymentAddress": "addr1q8jy52kjgz0s433936kqhav2fwy4fcy3pt58d82uvlzj29fzg09re8x4s57uskhk4q509nvsdr9hnh2vgchk4tesnskq2zy3v0",
+    "qualifications": "I've been involved with Cardano since 2018. I've been through the initial eras of development of Byron, Shelly, Goguen. An important milestone was September 2021, when the Alonzo phase launched and smart contract creation features became available. Since then, a lot of new apps have been built, a lot of new projects have been created, and Cardano has become a platform worth checking out. I have tried all the apps that are on this blog and I believe they can be your gateway to the new Cardano ecosystem.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Website Cardanoeco",
+        "uri": "https://www.cardanoeco.cz/"
+      },
+      {
+        "@type": "Identity",
+        "label": "Contact",
+        "uri": "https://www.cardanoeco.cz/contact"
+      }
+    ]
+  }
+}
